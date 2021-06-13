@@ -1,0 +1,15 @@
+modules:
+  confluence:contentAction:
+    - key: bulk-delete-attachments
+      function: main
+      title: Bulk Delete the Attachments
+  function:
+    - key: main
+      handler: index.run
+app:
+  id: ari:cloud:ecosystem::app/9b55ee51-bcf8-40c3-be83-008280f48a7a
+  name: bulk-delete-attachments
+permissions:
+  scopes:
+    - 'read:confluence-content.summary'
+    - 'write:confluence-content'
